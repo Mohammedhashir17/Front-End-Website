@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth-Home</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 120px;
+}
+
+
+.blog-post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.blog-post h2 {
+    margin: 15px 0;
+    color: #333;
+}
+
+.blog-post p {
+    color: #666;
+}
+    </style>
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <a href="#home"><img src="images/logo-1.png" alt="" width="200"></a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="products.html">products</a></li>
+                <li><a href="login.html">Register</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <div class="fas fa-bars"></div>
+    </header>
+
+    <main>
+        <section id="blog-posts" class="blog-posts">
+            <!-- Blog posts will be dynamically loaded here -->
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href=""><img src="images/logo-2.png" alt=""></a>
+                
+            </div>
+            
+            <div class="box">
+                <h3 class="news">newsletter</h3>
+                <form action="">
+                    <input type="email" placeholder="enter your email">
+                    <button class="fas fa-paper-plane"></button>
+                </form>
+            </div>
+        </div>
+        <h1 class="credit">&copy <span>2024 darksoul</span> | all right reserved</h1>
+    </section>
+
+    <!-- lightbox start -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <div class="lightbox-close">&times</div>
+            <img src="images/project2.jpg" alt="" class="lightbox-img">
+        </div>
+        <div class="lightbox-control">
+            <div class="prev" onclick="prevSlide()"><i class="fa fa-angle-left"></i></div>
+            <div class="next" onclick="nextSlide()"><i class="fa fa-angle-right"></i></div>
+        </div>
+    </div>
+    <!-- lightbox end -->
+    <script>
+        const blogPosts = [
+    {
+        title: "The Benefits of Bamboo Products",
+        image: "images/bamboo.jfif",
+        description: "Bamboo is a sustainable and renewable resource that offers many benefits..."
+    },
+    {
+        title: "Eco-Friendly Packaging Solutions",
+        image: "images/packaging.jfif",
+        description: "Switching to eco-friendly packaging can reduce waste and lower your carbon footprint..."
+    },
+    {
+        title: "Why Choose Organic Cotton?",
+        image: "images/cotton.jfif",
+        description: "Organic cotton is grown without harmful pesticides and chemicals, making it better for the environment..."
+    },
+    {
+        title: "Sustainable Living: The Power of Reusable Products",
+        image: "images/reuse.jfif",
+        description: "Reusable products can significantly reduce waste and promote a more sustainable lifestyle. From water bottles to shopping bags, these items are essential for anyone looking to minimize their environmental impact."
+    },
+    {
+        title: "Innovative Biodegradable Materials",
+        image: "images/biodegradable.png",
+        description: "Biodegradable materials are breaking new ground in reducing waste and pollution. Learn how these innovative materials are changing the way we think about product life cycles."
+    },
+    {
+        title: "Solar-Powered Gadgets for Everyday Use",
+        image: "images/solar.jfif",
+        description: "Harness the power of the sun with solar-powered gadgets. These eco-friendly devices not only reduce energy consumption but also help you live a more sustainable life."
+    }
+];
+
+const blogContainer = document.getElementById('blog-posts');
+
+blogPosts.forEach(post => {
+    const blogPost = document.createElement('div');
+    blogPost.classList.add('blog-post');
+    
+    blogPost.innerHTML = `
+        <img src="${post.image}" alt="${post.title}">
+        <h2>${post.title}</h2>
+        <p>${post.description}</p>
+    `;
+    
+    blogContainer.appendChild(blogPost);
+});
+
+    </script>
+</body>
+</html>

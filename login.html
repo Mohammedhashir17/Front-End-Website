@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth-Home</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+    
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+        header .navbar ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+        }
+        header .navbar ul li{
+            margin: 0 1rem;
+        }
+        header .navbar ul li a{
+            font-size: 2rem;
+            color: #000;
+            font-style: italic;
+        }
+        header .navbar ul li a:hover{
+            color: var(--green);
+        }
+        .registration-form {
+            background-color: #fff;
+            /* margin: 700px 0 !important; */
+            width: 30% !important;
+            height: 100%;
+            padding: 20px 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .registration-form h2 { 
+            margin-bottom: 15px;    
+            font-size: 20px;
+            text-align: center;
+        }
+        .registration-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        .registration-form input, 
+        .registration-form select, 
+        .registration-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #english, #non-english {
+            width: auto;
+        }
+        .registration-form input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }   
+        .registration-form textarea {
+            height: 60px;
+            resize: none;
+        }
+        .registration-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .registration-form button:hover {
+            background-color: #218838;
+        }
+    </style>    
+</head>
+<body>
+
+<div class="registration-form">
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+        <label for="userid">User ID:</label>
+        <input type="text" id="userid" name="userid" required minlength="5" maxlength="12">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="7" maxlength="12">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required pattern="[A-Za-z]+">
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Please select a country</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="india">India</option>
+            <!-- Add more countries as needed -->
+        </select>
+
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" id="zipcode" name="zipcode" required pattern="\d+">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="sex" value="male" required>
+        <label for="male" style="display:inline;">Male</label>
+        <input type="radio" id="female" name="sex" value="female" required>
+        <label for="female" style="display:inline;">Female</label>
+
+        <label>Language:</label>
+        <input type="checkbox" id="english" name="language" value="english" checked>
+        <label for="english" style="display:inline;">English</label><br>
+        <input type="checkbox" id="non-english" name="language" value="non-english">
+        <label for="non-english" style="display:inline;">Non-English</label><br>
+        <br>
+        <label for="about">About:</label>
+        <textarea id="about" name="about" placeholder="About our Website"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

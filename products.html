@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth-Home</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <a href="#home"><img src="images/logo-1.png" alt="" width="200"></a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="products.html">products</a></li>
+                <li><a href="login.html">Register</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <div class="fas fa-bars"></div>
+    </header>
+    <!-- header section -->
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="products-container">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="images/isabgol-seeds.png" alt="Cool Herbal Tea">
+                <h3>Isagol Husk and Seeds</h3>
+                <p>₹ 290/Pack</p>
+                <p><strong>Brand:</strong> GEP</p>
+                <p><strong>Packaging Size:</strong> Bag/pouch</p>
+                <p><strong>Form:</strong> Tea cut</p>
+                <button class="quote-btn">Get Quote</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="images/ginger-oil.webp" alt="Isabgol Husk And Seed">
+                <h3>Ginger Oil</h3>
+                <p>₹ 250/Packet</p>
+                <p><strong>Form:</strong> Whole/cut/powder</p>
+                <p><strong>Packaging Size:</strong> As per requirement</p>
+                <button class="quote-btn">Get Quote</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="images/neem-leaves-powder.webp" alt="Neem Leaves Powder">
+                <h3>Neem Leaves Powder</h3>
+                <p>₹ 170/Pack</p>
+                <p><strong>Packaging Type:</strong> As per requirement</p>
+                <p><strong>Type:</strong> Neem Leaves Powder</p>
+                <p><strong>Ingredients:</strong> Neem leaves</p>
+                <button class="quote-btn">Get Quote</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="images/cool-herbal-tea.png" alt="Curcuma Longa">
+                <h3>Herbal Tea</h3>
+                <p>₹ 155/Pack</p>
+                <p><strong>Brand:</strong> GEP</p>
+                <p><strong>Form:</strong> Whole/cut/powder</p>
+                <p><strong>Color:</strong> NATURAL</p>
+                <button class="quote-btn">Get Quote</button>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="images/fennel-seed-oil.webp" alt="Fennel Seeds Oil">
+                <h3>Fennel Seeds Oil</h3>
+                <p>₹ 130/BOTTLE</p>
+                <p><b>Purity:</b> 99% Pure</p>
+                <p><strong>Usage/Application:</strong> Pharma</p>
+                <p><strong>Form:</strong> Liquid</p>
+                <button class="quote-btn">Buy Now</button>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="images/fresh-cumin.webp" alt="Fennel Seeds Oil">
+                <h3>Fresh Cumins</h3>
+                <p>₹ 130/BOTTLE</p>
+                <p><b>Purity:</b> 99% Pure</p>
+                <p><strong>Usage/Application:</strong> Pharma</p>
+                <p><strong>Form:</strong> Liquid</p>
+                <button class="quote-btn">Buy Now</button>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="images/amla-powder.webp" alt="Fennel Seeds Oil">
+                <h3>Amla Powder</h3>
+                <p>₹ 130/BOTTLE</p>
+                <p><b>Purity:</b> 99% Pure</p>
+                <p><strong>Usage/Application:</strong> Pharma</p>
+                <p><strong>Form:</strong> Liquid</p>
+                <button class="quote-btn">Buy Now</button>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="images/bay-leaves.webp" alt="Fennel Seeds Oil">
+                <h3>Bay Leaves</h3>
+                <p>₹ 130/BOTTLE</p>
+                <p><b>Purity:</b> 99% Pure</p>
+                <p><strong>Usage/Application:</strong> Pharma</p>
+                <p><strong>Form:</strong> Liquid</p>
+                <button class="quote-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+                // JavaScript to handle button click events
+        document.querySelectorAll('.quote-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Quote requested for ' + button.parentElement.querySelector('h3').innerText);
+            });
+        });
+    </script>
+
+    <!-- footer section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href=""><img src="images/logo-2.png" alt=""></a>
+                
+            </div>
+            
+            <div class="box">
+                <h3 class="news">newsletter</h3>
+                <form action="">
+                    <input type="email" placeholder="enter your email">
+                    <button class="fas fa-paper-plane"></button>
+                </form>
+            </div>
+        </div>
+        <h1 class="credit">&copy <span>2024 darksoul</span> | all right reserved</h1>
+    </section>
+
+    
+    <!-- lightbox end -->
+    <script src="script.js"></script>
+</body>
+</html>

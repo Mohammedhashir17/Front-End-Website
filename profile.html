@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth-Home</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .profile-container {
+    max-width: auto;
+    margin: 10px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+section{
+    padding: 0 4%;
+    background-image: url('images/bg.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-card {
+    padding: 40px;
+    border-bottom: 2px solid #eef4f3;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+
+.profile-card h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #2b7a78;
+    letter-spacing: 1px;
+}
+
+.profile-card p{
+    font-size: 20px;
+}
+
+.title {
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.about-me, .skills, .contact {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.about-me h2, .skills h2, .contact h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+    font-size: 50px;
+    border-left: 5px solid #2b7a78;
+    padding-left: 10px;
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills li {
+    background-color: #e0f0ed;
+    color: #333;
+    font-size: 25px;
+    padding: 30px 40px;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.profile-card button {
+            width: 25%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+.skills li:hover {
+    background-color: #86e679;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.contact p {
+    font-size: 30px;
+    margin: 5px 0;
+    color: #666;
+}
+
+.about-me p{
+    font-size: 20px;
+}
+
+.contact p a{
+    color: #30e420;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+
+.contact p a:hover {
+    color: #79e488;
+}
+    </style>
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <a href="index.html"><img src="images/logo-1.png" alt="" width="200"></a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="products.html">products</a></li>
+                <li><a href="login.html">Register</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <div class="fas fa-bars"></div>
+    </header>
+    
+    <section class="profile-container">
+        <div class="profile-card">
+            <img src="MyPhoto.jpeg" alt="Your Photo" class="profile-photo">
+            <h1>MD HASHIR A J</h1>
+            <p class="title">Software Engineer</p><br>
+            <button onclick="downloadResume()">Download Resume</button>
+        </div>
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>
+               * I am a dedicated and passionate software engineer with a deep commitment to sustainable development and eco-friendly technologies. With a strong foundation in full-stack development, I have experience in building robust, user-friendly applications using a variety of modern technologies, including the MERN stack and PHP/MySQL.
+            </p><br>
+            <p>
+                * My journey in the tech world began with a curiosity about how technology can drive positive change. This curiosity led me to develop a range of projects that not only showcase my technical abilities but also reflect my values and dedication to environmental sustainability. I believe that technology has the power to solve some of the most pressing challenges facing our planet today, and I am committed to being part of that solution.
+            </p><br>
+            <p>
+               * In my recent work, including the development of the GREEN EARTH PRODUCTS website, I have focused on creating user-centric designs that are both aesthetically pleasing and functionally efficient. My goal is to deliver seamless user experiences that align with the principles of green technology.
+            </p><br>
+            <p>
+               * When I'm not coding, I enjoy exploring the latest trends in sustainable tech, participating in hackathons, and contributing to open-source projects that promote environmental awareness. I am continuously learning and adapting to new technologies, always striving to enhance my skills and contribute more effectively to the causes I care about.
+            </p>        
+        </div>
+
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>PHP </li>
+                <li>MySQL</li>
+                <li>Front-End Development</li>
+            </ul>
+        </div>
+
+       
+    </section>
+
+
+    <!-- footer section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href=""><img src="images/logo-2.png" alt=""></a>
+                
+            </div>
+            
+            <div class="box">
+                <h3 class="news">newsletter</h3>
+                <form action="">
+                    <input type="email" placeholder="enter your email">
+                    <button class="fas fa-paper-plane"></button>
+                </form>
+            </div>
+        </div>
+        <h1 class="credit">&copy <span>2024 darksoul</span> | all right reserved</h1>
+    </section>
+
+
+    <script>
+    function downloadResume() {
+        window.open('MD_HASHIR_A_J.pdf', '_blank');
+    }
+    </script>
+</body>
+
+</html>
